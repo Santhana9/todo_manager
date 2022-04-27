@@ -163,3 +163,7 @@
     font-size: 15px;
 
   }
+  .TodoComp{
+    text-decoration: line-through;
+    text-decoration-color: rgb(200, 32, 65);
+  }
