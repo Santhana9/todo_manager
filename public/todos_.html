@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My To-do Manager</title>
+</head>
+<body>
+  <main class="TodoMain">
+    <h1 class="Todo-h1">My Todo-List</h1>
+    <div>
+      <input type="text" id="todo_text" class="Todo-todo_text" placeholder="What's next?">
+      <input type="date" id="due_date" class="Todo-due_date">
+      <input type="button" value="Add" class="TodoAdd-btn">
+    </div>
+    <section>
+      <div class="BlockFlex BlockPadding">
+        <h3 class="Todo-h3">Due Today</h3>
+        <p class="Dones">0/4</p>
+      </div>
+        <ul>
+          <li class="TodoUl-li BlockFlex">
+            <input type="checkbox" name="" id="" class="TodoCheck">
+            Complete the project.
+            <p class="Dones TextOverdue">Overdue.</p>
+            <a href="#" class="a-hide"><img class="img-trashcan" alt=""></a>
+          </li>
+          <li class="TodoUl-li BlockFlex">
+            <input type="checkbox" name="" id="" class="TodoCheck">
+            Prepare for semester exam.
+            <!-- <p class="Dones TextOverdue">Overdue.</p> -->
+            <a href="#" class="a-hide"><img class="img-trashcan" alt=""></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section>
+      <div class="BlockFlex BlockPadding">
+        <h3 class="Todo-h3">Due Tomorrow</h3>
+        <p class="Dones">0/1</p>
+      </div>
+      <ul>
+        <li class="TodoUl-li BlockFlex">
+          <input type="checkbox" class="TodoCheck">
+          Text Text Text.
+          <a href="#" class="a-hide"><img class="img-trashcan"></a>
+        </li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>

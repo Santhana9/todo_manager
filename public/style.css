@@ -1,0 +1,112 @@
+.TodoMain{
+    max-width: 600px;
+    margin: 50px auto;
+    font-family: sans-serif;
+}
+.Todo-h1{
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #453C52;
+    letter-spacing: 0.14px;
+}
+.Todo-todo_text{
+    background:#ffffff;
+    border: 1px solid #BFB8CC;
+    border-radius: 4px;
+    
+    font-size: 20px;
+    color: #726a7e;
+    letter-spacing: 0.1px;
+    width: 280px;
+    height: 40px;
+    text-indent: 15px;
+}
+.Todo-due_date{
+    background: #ffffff;
+    border:1px solid #BFB8CC;
+    border-radius: 4px;
+
+    font-size: 20px;
+    color: #726a7e;
+    letter-spacing: 0.1px;
+    height: 40px;
+    width: 180px;
+    text-indent: 15px;
+}
+.TodoAdd-btn{
+    background: #48BB78;
+    border-radius: 4px;
+    border-radius: 4px;
+    height: 40px;
+    width: 90px;
+    color: white;
+    font-size: 20px;
+    border-width: 1px;
+    border-color: transparent;
+    margin-left: 5px;
+
+}
+.TodoAdd-btn:hover{
+    background:darkgreen;
+}
+.Todo-h3{
+    font-size: 20px;
+    color: #453C52;
+    letter-spacing: 0.1px;
+    height: 20px;
+}
+.BlockFlex{
+    display: flex;
+    height: 30px;
+}
+.BlockPadding{
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.Dones{
+    font-size: 20px;
+    color: #453C52;
+    letter-spacing: 0.09px;
+    padding-left:15px;
+}
+.TodoUl-li{
+    font-size: 20px;
+    color: #453C52;
+    letter-spacing: 0.1px;
+    line-height: 25px;
+    list-style: none;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+}
+.TodoCheck{
+    background: #ffffff;
+    border: 1px solid #bfb8cc;
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    margin: 5px 5px 5px 10px;
+}
+.TextOverdue{
+    color: red;
+}
+li:hover {
+    background-color: lightskyblue;
+}
+.img-trashcan{
+    content: url("trashcan.png");
+    width: 20px;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+}
+.a-hide{
+    display: none;
+}
+li:hover > a{
+    display: inline;
+}
+
+

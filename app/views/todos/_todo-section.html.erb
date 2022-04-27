@@ -1,0 +1,19 @@
+      <section>
+        <div class="block--flex pad">
+          <h3 class="due-head"><%= section_title %></h3>
+          <p class="overdue-dones--info"><%= todos.completed.count%>/<%= todos.count%></p>
+        </div>
+        <ul>
+          <% todos.each do |todo|%>
+              <li class="ul__li--todo block--flex">
+                <input type="checkbox" name="" id="" class="li__input--big" />
+                <%= todo.todo_text%>
+                <% if show_due_date%>
+                    <p class="TodoDates"><%= todo.due_date.to_formatted_s(:short)%></p>
+                <% end %>
+                <%# Submit SaaS 201 Project %>
+                <a href="#" class="a--hide"><img class="img--trashcan" /></a>
+                </li>
+          <%end%>
+        </ul>
+      </section>
