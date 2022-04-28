@@ -16,7 +16,11 @@
           <% end %>
           
           <%# Submit SaaS 201 Project %>
-          <a href="#" class="a--hide"><img class="img--trashcan" /></a>
+          <a href="javascript:void(0)" class="a--hide">
+            <%= form_with(url: "todos/#{todo.id}", method: "delete") do %>
+              <input type="image" class="img--trashcan">
+            <% end %>
+          </a>
           </li>
     <%end%>
   </ul>

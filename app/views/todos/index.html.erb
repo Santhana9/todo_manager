@@ -2,7 +2,7 @@
 
 <main class="body__main--root">
   <h1 class="main__h1--app-head">My Todo-list</h1>
-  <form action="/todos" method="POST">
+  <%= form_with(url: "/todos", method: "post") do%>
     <input
       type="text"
       name="todo_text"
@@ -17,7 +17,7 @@
       required
     />
     <input type="submit" value="Add" class="btn--pleasant" />
-    </form>
+    <% end %>
     <%= render partial: "todo-section", locals: {section_title: "OverDue", todos: Todo.overdue, show_due_date: true}%>
     <%= render partial: "todo-section", locals: {section_title: "Due Today", todos: Todo.due_today, show_due_date: false}%>
     <%= render partial: "todo-section", locals: {section_title: "Due Later", todos: Todo.due_later, show_due_date: true}%>
