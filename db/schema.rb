@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_04_22_052530) do
+ActiveRecord::Schema[7.0].define(version: 2022_04_29_084006) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -18,12 +18,14 @@ ActiveRecord::Schema[7.0].define(version: 2022_04_22_052530) do
     t.text "todo_text"
     t.date "due_date"
     t.boolean "completed"
+    t.bigint "user_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.string "first_name"
+    t.string "last_name"
     t.string "email"
-    t.string "password"
+    t.string "password_digest"
   end
 
 end

@@ -6,11 +6,15 @@ Rails.application.routes.draw do
   # get "todos", to: "todos#index" 
   # post "todos/create", to: "todos#create"
   # get "todos/:id", to: "todos#show"
+  root "home#index"
+  get "/", to: "home#index"
   resources "todos"
   # get "users", to: "users#index"
   # get "public/todos"
-  post "users/login", to: "users#login"
+  # post "users/login", to: "users#login"
   resources "users"
+  get "/signin", to: "sessions#new", as: :new_sessions
+  post "/signin" ,to: "sessions#create", as: :sessions
 
   # get "todos/create", to: "todos#create"
 end

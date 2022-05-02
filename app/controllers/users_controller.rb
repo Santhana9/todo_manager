@@ -1,20 +1,26 @@
 class UsersController < ApplicationController
     skip_before_action :verify_authenticity_token
+    def new
+        render "users/new"
+    end
+
     def index
         #render plain: "In USers controllers"
         render plain: User.all.map{|user| user.to_pleasant_string}.join("\n")
     end
     def create
         # byebug
-        name = params[:name]
+        first_name = params[:first_name]
+        last_name = params[:last_name]
         email = params[:email]
         password = params[:password]
         new_user = User.create!(
-            name: name,
+            first_name: first_name,
+            last_name: last_name,
             email: email,
             password: password,
         )
-        render plain: "New User account with id =#{new_user.id} is created"
+        redirect_to root_path
     end
 
     def login
