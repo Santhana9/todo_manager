@@ -12,8 +12,9 @@
 
   <body>
     <% if @current_user %>
-      <p>
+      <p class="HomeUser" >
         <%= @current_user.first_name %>
+        <%= button_to "Sign-Out", destroy_session_path, method: :delete, class: "SignOut-btn btn--pleasant" %>
       </p>
     <% end %>
     <%= yield %>

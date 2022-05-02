@@ -1,4 +1,18 @@
 .HomeContainer{
     margin: 25% auto;
-      
+
+}
+.HomeUser{
+    padding: 20px;
+    font-size: 20px;
+    background-color: lavender;
+    display: flex;
+}
+
+.SignOut-btn{
+    display: flex;
+    background-color: aquamarine;
+    border: none;
+    height: 20px;
+    width: 72px;
 }

@@ -1,4 +1,5 @@
 class UsersController < ApplicationController
+    skip_before_action :ensure_user_logged_in
     skip_before_action :verify_authenticity_token
     def new
         render "users/new"
@@ -20,6 +21,7 @@ class UsersController < ApplicationController
             email: email,
             password: password,
         )
+        #session[current_user_id] = new_user.id
         redirect_to root_path
     end
 

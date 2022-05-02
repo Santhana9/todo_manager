@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   # get "public/todos"
   # post "users/login", to: "users#login"
   resources "users"
+
   get "/signin", to: "sessions#new", as: :new_sessions
   post "/signin" ,to: "sessions#create", as: :sessions
-
-  # get "todos/create", to: "todos#create"
+  delete "/signout", to: "sessions#destroy", as: :destroy_session
 end
