@@ -1,5 +1,8 @@
 <p class="UsersNew-title">Sign In! </p>
 <section class="UsersNew">
+    <% if (flash[:error]) %>
+        <p class="FlashMessage" ><%= flash[:error] %></p>
+    <% end %>
     <%= form_with url: sessions_path do |form|%>
         <div class="Form-section">
             <p class="Font-label">Email</p>

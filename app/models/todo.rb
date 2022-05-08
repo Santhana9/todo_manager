@@ -1,4 +1,5 @@
 class Todo < ActiveRecord::Base
+    validates :todo_text, presence: true
     belongs_to :user
     def to_pleasant_string
         is_completed = completed ? "[X]" : "[ ]"
